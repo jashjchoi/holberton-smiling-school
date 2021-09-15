@@ -198,33 +198,33 @@ img.p-arrow, img.n-arrow {
 
 /* Task 4 - Free Membership section
   ============================= */
-  .membership_section{
-    background-color: var(--colorprimary);
-    min-height: 500px;
-    padding: 40px 0;
-    min-width: auto;
-  }
+.membership_section{
+  background-color: var(--colorprimary);
+  min-height: 500px;
+  padding: 40px 0;
+  min-width: auto;
+}
 
-  .mcard {
-    border: none;
-    width: 257px;
-    height: 153px;
-  }
-  .smile-img {
-    width: 45px;
-  }
-  
-  .member-title {
-    font-family: var(--font-family-title);  
-    font-size: 18px;
-    line-height: 26px;
-  }
-  
-  .member-text {
-    font-family: var(--font-family-base);  
-    font-size: 14px;
-    line-height: 26px;
-  }
+.mcard {
+  border: none;
+  width: 257px;
+  height: 153px;
+}
+.smile-img {
+  width: 45px;
+}
+
+.member-title {
+  font-family: var(--font-family-title);  
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.member-text {
+  font-family: var(--font-family-base);  
+  font-size: 14px;
+  line-height: 26px;
+}
 
 /* Task 6 - Footer
   ============================= */
@@ -252,8 +252,38 @@ a:link {
 a:visited {
   text-decoration: none; }
 
+
+/* Task 7 - Pricing page - Header & Hero
+  ============================= */
+
+.hero-pricing{
+  position: relative;
+  background: url('images/pic_2.jpg') center center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 1093px;
+}
+.pricing-section{
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.price-pro-title{
+  font-size: 60px;
+}
+
+.logo-pricing {
+  width: 37px;
+  height: 30px;
+}
+.smile-title {
+  font-family: 'Coiny';
+  font-size: 32px;
+}
+  
 @media screen and (max-width: 480px) {
   .title {
-    font-size: 61px;
+    font-size: 60px;
   }
 }
