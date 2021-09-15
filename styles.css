@@ -51,6 +51,7 @@ body {
 [class^='icon'],
 [class*=' icon'] {
   font-family: 'icon' !important;
+  font-style: normal;
   text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
@@ -224,6 +225,32 @@ img.p-arrow, img.n-arrow {
     font-size: 14px;
     line-height: 26px;
   }
+
+/* Task 6 - Footer
+  ============================= */
+.footer_section{
+  background-color: var(--colorprimary);
+  min-height: 249px;
+}
+
+.icon-facebook::before {
+  content: '\e908';
+}
+
+.icon-twitter::before {
+  content: '\e90f';
+}
+.icon-instagram::before {
+  content: '\e90a';
+}
+.copyright{
+  opacity: .4;
+}
+
+a:link {
+  text-decoration: none; }
+a:visited {
+  text-decoration: none; }
 
 @media screen and (max-width: 480px) {
   .title {
