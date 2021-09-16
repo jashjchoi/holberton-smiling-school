@@ -263,12 +263,6 @@ a:visited {
   width: 100%;
   min-height: 1093px;
 }
-.pricing-section{
-  top: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .price-pro-title{
   font-size: 60px;
 }
@@ -281,9 +275,28 @@ a:visited {
   font-family: 'Coiny';
   font-size: 32px;
 }
+
+
+/* Task 8 - Pricing page - Add table
+  ============================= */
+
+.table > tbody > tr:first-child > td,
+.table > tbody > tr:first-child > th {
+  border: none;
+}
+
+.iconCheck::before {
+  content: '\e905';
+  color: #82d24f;
+}
+
+.table tr, th, td {
+  vertical-align: middle;
+}
   
 @media screen and (max-width: 480px) {
   .title {
     font-size: 60px;
   }
 }
+
