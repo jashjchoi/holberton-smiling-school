@@ -243,9 +243,6 @@ img.p-arrow, img.n-arrow {
 .icon-instagram::before {
   content: '\e90a';
 }
-.copyright{
-  opacity: .4;
-}
 
 a:link {
   text-decoration: none; }
