@@ -115,8 +115,12 @@ li {
 }
 
 .highlightText {
-  color: var(--colorpurple);
+  color: var(--colorpurple)  !important;
 }
+.highlightcolor {
+  background: var(--colorpurple) !important;
+}
+
 .rounded {
   border-radius: 30px !important;
 }
@@ -166,22 +170,25 @@ img.p-arrow, img.n-arrow {
 
 /* Task 3 - Set up carousel slider section
   ============================= */
+.card {
+  border: none;
+}
 .img_user {
   width: 30px;
 }
 
-.card {
-  border: none;
+.card-title{
+  font-size:16px;
 }
 
 .iconPlay {
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
 }
 
-.ctime {
+.ptime {
   font-family: var(--font-family-bold);
-  font-size: 14px;
+  font-size: 12px;
   line-height: 27px;
 }
 
@@ -190,7 +197,7 @@ img.p-arrow, img.n-arrow {
 }
 .reviewer {
   font-family: var(--font-family-title);  
-  font-size: 14px;
+  font-size: 12px;
   line-height: 27px;
 }
 .review_star {
@@ -239,17 +246,23 @@ img.p-arrow, img.n-arrow {
 
 .icon-facebook::before {
   content: '\e908';
+  font-size:32px;
 }
 
 .icon-twitter::before {
   content: '\e90f';
+  font-size:32px;
+
 }
 .icon-instagram::before {
   content: '\e90a';
+  font-size:32px;
+
 }
 
 a:link {
-  text-decoration: none; }
+  text-decoration: none; 
+}
 a:visited {
   text-decoration: none; }
 
@@ -302,7 +315,7 @@ a:visited {
 
 
 
-/* Task 12 - Courses Page
+/* Task 12 & 13 - Courses Header and Form/dropdown section
   ============================= */
 
 .hero-courses {
@@ -311,13 +324,46 @@ a:visited {
   width: 100%;
   min-height: 216px;
   position: relative;
-  padding: 0 0 30px 0;
 }
 
-  
+.iconSearch::before {
+  content: '\e912';
+}
+
+.form-control::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.616);
+  font-size:18px;
+}
+
+#topic, #sortby{
+  font-size: 18px;
+  min-width: 175px;
+}
+
+.form-group .dropdown-item{
+  font-size: 14px;
+}
+
+.dropdown-menu {
+  width: 90%;
+}
+
+.input-box{
+  background-color: #d79df980;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.404);
+  min-height: 50px;
+}
+
+.form-group .dropdown-item:hover{
+  color:var(--colorpurple) !important;  
+}
+
 @media screen and (max-width: 480px) {
   .title {
     font-size: 60px;
   }
+  .img_user {
+    width: 200%;
+  }
+  
 }
-
